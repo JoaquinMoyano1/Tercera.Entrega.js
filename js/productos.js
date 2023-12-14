@@ -103,10 +103,12 @@ if(cartProductsLS) {
 let addButton = document.querySelectorAll(".productoAgregar")
 let productsContainer = document.getElementById("productsContainer")
 
+
+
+
 function renderProductos(productsArray) {
     productsArray.forEach(producto => {
-        const card = document.createElement("div")
-        card.innerHTML= `
+        productsContainer.innerHTML+= `
                             <div class="col-xl-3 col-md-6 col-sm-12">
                                 <div class="card imgProd">
                                     <img src=${producto.imagen} class="card-img-top" alt=${producto.alt}>
@@ -119,11 +121,10 @@ function renderProductos(productsArray) {
                                 </div>
                             </div>
                             `
-
-        productsContainer.appendChild(card)
     })
     addToCartButton ()
-}
+} 
+
 renderProductos(productos)
 
 function addToCartButton () {
@@ -137,6 +138,24 @@ function addToCartButton () {
             console.log(cartProducts)
 
             localStorage.setItem("cartProducts", JSON.stringify(cartProducts))
-        }
-    })
+
+            /*libreria toastify para cada producto que se añade al carrito*/ 
+
+            Toastify({
+                text: "Producto agregado al carrito",
+                duration: 3000,
+                gravity: "bottom",
+                position: "right",
+                style: {
+                    background: "linear-gradient(to right, #bdc3c7, #2c3e50)",
+                },
+                onClick: function () {
+                },
+            }).showToast();
+
+
+        };
+    });
 }
+
+

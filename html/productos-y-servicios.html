@@ -10,6 +10,9 @@
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
 
+    <!-- link css toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
     <meta name="description" content="Nuestros principales productos y contratacion de stands para eventos">
      <meta name="keywords" content="Givree, glitter, frasco, maquillaje, stand">
 </head>
@@ -35,16 +38,21 @@
                         <a class="nav-link" aria-current="page" href="../html/eventos.html"> Eventos </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../html/productos-y-servicios.html"> productos y servicios </a>
+                        <a class="nav-link" href="../html/productos-y-servicios.html"> Productos y Servicios </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../html/quienessomos.html"> ¿quienes somos? </a>
+                        <a class="nav-link" href="../html/quienessomos.html"> ¿Quienes Somos? </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../html/contacto.html"> contacto </a>
+                        <a class="nav-link" href="../html/contacto.html"> Contacto </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../html/carrito.html"> carrito </a>
+                        <a class="nav-link" href="../html/carrito.html"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                          </svg>
+                          <span id="cartItemCount" class="badge bg-danger"></span>
+                         </a>
+                        
                     </li>
                 </ul>
             </nav>
@@ -56,13 +64,13 @@
             <h2 class="tituloEnc"> Nuestros Productos y Servicios </h2>
         
 
-            <main id="productsContainer">
-                <main  class="container row"></main>
+            <main id="productsContainer"class="row">
+                
             </main>
             
             <!-- <section id="productsContainer"></section> -->
 
-            <button class="w-100 btn btn-lg btn-gral">
+            <button class="w-100 btn btn-lg btn-gral my-5">
                 <a href="./carrito.html">Ir al carrito</a>
             </button>
             
@@ -94,6 +102,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
+
+        <!-- js carrito -->
+        <script src="../js/carrito.js"></script>
+
+        <!-- js productos -->
+        <script src="../js/productos.js"></script>
+
+         <!-- toastify -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
 
 </body>
 
