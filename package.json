@@ -1,16 +1,33 @@
 {
-  "name": "entrega-final",
+  "name": "tercera-preentrega",
   "version": "1.0.0",
-  "description": "",
+  "description": "Tercer Entrega del curso de JavaScript. \r En esta tercer entrega me encuentro uniendo ya de una vez lo que fue mi proyecto principal de \"Desarrollo Web\" empezando a aplicar las herramientas de clase.\r Me encontre con varios inconvenientes con el codigo y no pude avanzar mas que por el lado de productos y servicios de la pagina.\r Hice uso de DOM, If, for, Storage y Eventos de usuario.\r Mi unico inconveniente con la entrega y espero que me puedan decir y orientar hacia donde esta el problema, es que, como veran, \r todas las cards de los productos me quedan en columna, intente buscar por todos lados pero no pude hacer que se pongan en forma de galeria.\r No me avive de mandar un mensaje a los tutores la verdad, ahi estuve mal yo pero queria ver si lo podia resolver por mi cuenta.\r De todas formas, y mas alla de ese pequeño inconveniente que tuve con el diseño, a mi parecer el trabajo esta bastante bien, y ya me va encaminando a como quiero \r que funcione la pagina en suy totalidad.",
   "main": "index.js",
+  "dependencies": {
+    "anymatch": "^3.1.3",
+    "binary-extensions": "^2.2.0",
+    "braces": "^3.0.2",
+    "chokidar": "^3.5.3",
+    "fill-range": "^7.0.1",
+    "glob-parent": "^5.1.2",
+    "immutable": "^4.3.4",
+    "is-binary-path": "^2.1.0",
+    "is-extglob": "^2.1.1",
+    "is-glob": "^4.0.3",
+    "is-number": "^7.0.0",
+    "normalize-path": "^3.0.0",
+    "picomatch": "^2.3.1",
+    "readdirp": "^3.6.0",
+    "sass": "^1.69.5",
+    "source-map-js": "^1.0.2",
+    "to-regex-range": "^5.0.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass",
     "sass:watch": "sass --watch scss/main.scss  css/main.css"
   },
+  "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "sass": "^1.68.0"
-  }
+  "license": "ISC"
 }

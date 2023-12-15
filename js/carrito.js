@@ -1,4 +1,5 @@
 let cartStorage = localStorage.getItem("cartProducts");
+
 cartStorage = JSON.parse(cartStorage);
 
 let cartContainer = document.getElementById("cartSection");
@@ -82,6 +83,7 @@ const clearCartButton = document.getElementById("clearCartButton");
 
 // Agrega un listener al botón
 clearCartButton.addEventListener("click", () => {
+    
     // Muestra el aviso de confirmación
     Swal.fire({
         title: "¿Estás seguro de vaciar el carrito?",
@@ -128,6 +130,8 @@ function deleteProduct(productId) {
     totalContainer.innerHTML = "";
     renderCarrito(groupedCartItems);
 }
+
+
 
 function clearCart() {
     // Limpia el carrito
